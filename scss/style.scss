@@ -71,7 +71,7 @@ body {
             // 첫번째 
             &.face1 {
                 display: block;
-                
+
                 .inner {
                     div {
                         width: 290px;
@@ -112,6 +112,9 @@ body {
                 }
             }
 
+            // 두번째
+            &.face2 {
+            }
 
         }
     }
