@@ -114,7 +114,6 @@ body {
 
             // 두번째
             &.face2 {
-                display: block;
 
                 .inner {
                     div {
@@ -156,6 +155,63 @@ body {
             }
 
             // 세번째
+            &.face3 {
+
+                .inner > div {
+                    width: 100%;
+                    height: 253px;
+                    margin-bottom: 20px;
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                    }
+
+
+                    .pic {
+                        width: 120px;
+                        height: 120px;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        border: 1px solid #fff;
+                        float: left;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .con {
+                        width: 350px;
+                        float: right;
+                        
+                        h2 {
+                            font: bold 22px/1 "orbitron";
+                            color: #fff;
+                            margin-bottom: 17px;
+                        }
+
+                        p {
+                            font: 18px/1 "arial";
+                            color: #ddd;
+                            margin-bottom: 27px;
+                        }
+
+                        span {
+                            font:12px/1 "orbitron";
+                            color: aqua;
+                        }
+                    }
+                }
+            }
+
+            //네번째
+            &.face {
+                display: block;
+            }
 
         }
     }
