@@ -237,9 +237,6 @@ body {
 .wrap #circle article.face5 .inner div:hover .reflect {
   top: -52%;
 }
-.wrap #circle article.face6 {
-  display: block;
-}
 .wrap #circle article.face6 .inner > div {
   width: 100%;
   height: 185px;
@@ -290,6 +287,38 @@ body {
 .wrap #circle article.face6 .inner > div:hover .con > h2 {
   transform: scale(1.2);
   text-shadow: 0px 0px 8px #fff;
+}
+.wrap #circle article.face7 .inner div > div {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.wrap #circle article.face7 .inner div > div video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+.wrap #circle article.face7 .inner div > div h2 {
+  position: absolute;
+  top: 140px;
+  left: 50px;
+  font-size: 40px;
+  color: #fff;
+  text-align: left;
+  text-shadow: 2px 2px 5px #555;
+}
+.wrap #circle article.face7 .inner div > div img:nth-of-type(1) {
+  position: absolute;
+  width: 200px;
+  bottom: 0px;
+  right: 20px;
+}
+.wrap #circle article.face8 {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
