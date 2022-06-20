@@ -24,6 +24,9 @@ body {
         left: 0px;
         opacity: 0.5;
     }
+    // 지름 * 3.14 = 원의 둘레길이
+    // 원의 둘레 길이 / 3.14 = 지름
+    // 2400px / 3.14 = 764px (transrateZ) 페이지 사이의 거리값
 
     #circle {
         width: 600px;
@@ -33,7 +36,7 @@ body {
         left: 50%;
         margin-left: -300px;
         margin-top: -400px;
-        perspective: 1300px;
+        perspective: 1600px;
 
         article {
             width: 100%;
@@ -41,6 +44,7 @@ body {
             position: absolute;
             top: 0px;
             left: 0px;
+            backface-visibility: hidden;
 
             
             // 공통의 UI
@@ -52,7 +56,7 @@ body {
                     width: 100%;
                     height: 100%;
                     border: 1px solid rgba(255, 255, 255, .5);
-                    background: rgba(255, 255, 255, .4);
+                    background: rgba(255, 255, 255, .2);
                     box-sizing: border-box;
                     padding: 50px;
                     position: relative;
@@ -70,7 +74,7 @@ body {
 
             // 첫번째 
             &.face1 {
-                transform: rotateY(0deg);
+                transform: rotateY(0deg) translateZ(-764px);
                 .inner {
                     div {
                         width: 290px;
@@ -114,7 +118,7 @@ body {
 
             // 두번째
             &.face2 {
-                transform: rotateY(45deg);
+                transform: rotateY(45deg) translateZ(-764px);
                 .inner {
                     div {
                         h2 {
@@ -156,7 +160,7 @@ body {
 
             // 세번째
             &.face3 {
-                transform: rotateY(90deg);
+                transform: rotateY(90deg) translateZ(-764px);
                 .inner > div {
                     width: 100%;
                     height: 253px;
@@ -210,7 +214,7 @@ body {
 
             //네번째
             &.face4 {
-                transform: rotateY(135deg);
+                transform: rotateY(135deg) translateZ(-764px);
                 .inner {
                     div {
                         &:nth-of-type(1) {
@@ -257,7 +261,7 @@ body {
 
             // 다섯번째
             &.face5 {
-                transform: rotateY(180deg);
+                transform: rotateY(180deg) translateZ(-764px);
                 .inner {
                     div {
 
@@ -306,7 +310,7 @@ body {
 
             // 여섯번째
             &.face6 {
-                transform: rotateY(225deg);
+                transform: rotateY(225deg) translateZ(-764px);
                 .inner {
                     > div {
                         width: 100%;
@@ -375,7 +379,7 @@ body {
 
             // 일곱번째
             &.face7 {
-                transform: rotateY(270deg);
+                transform: rotateY(270deg) translateZ(-764px);
                 .inner {
                     div > div {
                         width: 100%;
@@ -417,7 +421,7 @@ body {
 
             // 여덟번째
             &.face8 {
-                transform: rotateY(315deg);
+                transform: rotateY(315deg) translateZ(-764px);
                 .inner {
                     div {
                         &:nth-of-type(1) {
@@ -497,8 +501,8 @@ body {
                         &:hover {
                             i {
                                 transform: scale(1.2);
-                                color: lightcyan;
                                 text-shadow: 0px 0px 10px aqua;
+                                color: lightcyan;
                             }
                         }
                     }

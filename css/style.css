@@ -47,7 +47,7 @@ body {
   left: 50%;
   margin-left: -300px;
   margin-top: -400px;
-  perspective: 1300px;
+  perspective: 1600px;
 }
 .wrap #circle article {
   width: 100%;
@@ -55,6 +55,7 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
+  backface-visibility: hidden;
 }
 .wrap #circle article .inner {
   width: 100%;
@@ -64,7 +65,7 @@ body {
   width: 100%;
   height: 100%;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
   padding: 50px;
   position: relative;
@@ -78,7 +79,7 @@ body {
   transform: scale(1.03);
 }
 .wrap #circle article.face1 {
-  transform: rotateY(0deg);
+  transform: rotateY(0deg) translateZ(-764px);
 }
 .wrap #circle article.face1 .inner div {
   width: 290px;
@@ -113,7 +114,7 @@ body {
   margin-right: 20px;
 }
 .wrap #circle article.face2 {
-  transform: rotateY(45deg);
+  transform: rotateY(45deg) translateZ(-764px);
 }
 .wrap #circle article.face2 .inner div h2 {
   font: bold 24px/1 "orbitron";
@@ -140,7 +141,7 @@ body {
   text-shadow: 0px 0px 10px aqua;
 }
 .wrap #circle article.face3 {
-  transform: rotateY(90deg);
+  transform: rotateY(90deg) translateZ(-764px);
 }
 .wrap #circle article.face3 .inner > div {
   width: 100%;
@@ -184,7 +185,7 @@ body {
   color: aqua;
 }
 .wrap #circle article.face4 {
-  transform: rotateY(135deg);
+  transform: rotateY(135deg) translateZ(-764px);
 }
 .wrap #circle article.face4 .inner div:nth-of-type(1) {
   width: 100%;
@@ -218,7 +219,7 @@ body {
   margin-bottom: 15px;
 }
 .wrap #circle article.face5 {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateZ(-764px);
 }
 .wrap #circle article.face5 .inner div img {
   margin-bottom: 40px;
@@ -252,7 +253,7 @@ body {
   top: -52%;
 }
 .wrap #circle article.face6 {
-  transform: rotateY(225deg);
+  transform: rotateY(225deg) translateZ(-764px);
 }
 .wrap #circle article.face6 .inner > div {
   width: 100%;
@@ -306,7 +307,7 @@ body {
   text-shadow: 0px 0px 8px #fff;
 }
 .wrap #circle article.face7 {
-  transform: rotateY(270deg);
+  transform: rotateY(270deg) translateZ(-764px);
 }
 .wrap #circle article.face7 .inner div > div {
   width: 100%;
@@ -338,7 +339,7 @@ body {
   right: 20px;
 }
 .wrap #circle article.face8 {
-  transform: rotateY(315deg);
+  transform: rotateY(315deg) translateZ(-764px);
 }
 .wrap #circle article.face8 .inner div:nth-of-type(1) {
   width: 100%;
@@ -405,8 +406,8 @@ body {
 }
 .wrap #circle article.face8 .inner div:hover i {
   transform: scale(1.2);
-  color: lightcyan;
   text-shadow: 0px 0px 10px aqua;
+  color: lightcyan;
 }
 
 /*# sourceMappingURL=style.css.map */
